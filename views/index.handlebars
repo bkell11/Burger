@@ -29,12 +29,11 @@
                 </div>
             </div>
 
-            <!-- Right side (already eaten) -->
             <div class="col-md-6">
                 <h4 class="red_font">Already eaten!</h4>
                 <div id="already_eaten">
 
-                    <!-- Dynamically Insert Eaten Burgers Here -->
+
                     {{#each burgers}} {{#if this.devoured}}
                     <div class="input-group">
                         <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
@@ -49,12 +48,12 @@
 
     <form class="create-form">
 
-        <!-- Text Area Input -->
+
         <div class="row">
-            <!-- Empty Div to help center textarea -->
+
             <div class="col-md-3"></div>
 
-            <!-- Burger Input Box -->
+
             <div class="form-group col-md-6">
                 <center>
                     <label for="new_burger" class="red_font">Request a new burger and place your order!</label>
